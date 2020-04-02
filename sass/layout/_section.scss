@@ -1,0 +1,20 @@
+.section {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    background-color: #fff;
+    &-clients{
+        min-height: 20vh;
+    }
+    &-intro {
+        min-height: 40vh !important;
+        position: relative;
+        background-color: #eee;
+    }
+    &-experience, &-edu, &-exp {
+        border-bottom: 1px solid #ddd;
+    }
+    &-contact{
+        background-color: #ddd;
+    }
+}

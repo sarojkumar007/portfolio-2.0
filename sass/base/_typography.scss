@@ -1,0 +1,63 @@
+p {
+    font-size: 1.5rem;
+}
+.h2 {
+    font-family: Google;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+.details {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.h3 {
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
+}
+.text {
+    font-family: Google;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+.heading {
+    font-family: 'Stylish',Google, sans;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.heading-alt{
+    background-color: var(--color-primary);
+    color: #efefef;
+}
+.info-heading {
+    padding-left: .5rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+.info-time {
+    font-size: 1.5rem;
+}
+.info-details {
+    padding: 0 0 0 3.05rem;
+    font-size: 1.8rem;
+    font-weight: 100;
+
+    @include respond(tab){
+        padding-top: 1.5rem;
+        padding-left: 8.5rem;
+    }
+}
+.exp h3 {
+    padding-bottom: 1.5rem;
+}
+.exp-title {
+    text-align: left;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}

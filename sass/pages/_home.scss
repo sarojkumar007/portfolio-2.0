@@ -1,0 +1,284 @@
+.main {
+    margin-top: 10rem;
+    min-height: 100vh;
+    position: relative;
+}
+.parallax {
+    background: transparent;
+    min-height: 60rem;
+    position: relative;
+    background-image: linear-gradient(to right, #15427699, #15427699);
+    @include respond(tab){
+        min-height: 45rem;
+    }
+    @include respond(phone){
+        min-height: 80rem;
+    }
+}
+
+.profile-container {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    margin-left: 15%;
+    min-height: 40rem;
+    display: flex;
+    background-color: #ccc;
+
+    @include respond(tab){
+        width: 100%;
+        margin: 0;
+        // flex-wrap: nowrap;
+        // max-height: 70%;
+        top: 0;
+    }
+
+    @include respond(phone){
+        width: 100%;
+        margin: 0;
+        background-image: $radial-gradient;
+        min-height: 100%;
+        flex-direction: column;
+    }
+}
+.profile{
+    flex:0 0 40%;
+    background-image: linear-gradient(#15427620,#154276aa), url("../img/cv_prof.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include respond(phone){
+        height: 30%;
+        margin: 3% 25%;
+    }
+}
+.profile-details {
+    flex: 0 0 60%;
+    background-color: #eee;
+    padding: 5rem 10.5rem 5rem;
+
+    @include respond(tab-land){
+        padding: 5rem 7.5rem 5rem;
+    }
+    @include respond(phone){
+        width: 100%;
+        margin: 0;
+    }
+}
+.profile-photo {
+    width: 100%;
+    height: 100%;
+}
+.intro {
+    text-align: center;
+    width: 100%;
+    padding: 15rem 35rem 8rem;
+    @include respond(tab-land){
+        padding: 15rem 20rem 8rem;
+    }
+    @include respond(tab){
+        padding: 15rem 15rem 8rem;
+    }
+    @include respond(phone){
+        padding: 15rem 10rem 8rem;
+    }
+}
+.info-container {
+    padding: 3rem;
+    color: var(--color-primary);
+}
+.info {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    &-details{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    @include respond(tab){
+        flex-wrap: wrap;
+    }
+}
+.info-head{
+    flex: 0 0 50%;
+    display: flex;
+    @media screen and (min-width: 900px){
+        flex: 0 0 40%;
+    }
+    @media screen and (max-width: 400px){
+        flex: 0 0 100%;
+    }
+}
+.info-number {
+    margin-top: 1rem;
+    flex: 0 0 4rem;
+    height: 4rem;
+    color: #fff;
+    padding-top: .7rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+.info-title {
+    flex: 0 0 40rem;
+    padding: 0 4rem;
+    @media screen and (max-width: 400px){
+        flex: 0 0 100%;
+    }
+}
+.meta {
+    display: flex;
+    padding: .5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.info-icon {
+    fill: var(--color-primary);
+    margin: .2rem 1rem 0 0;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.edu-container {
+    display: flex;
+}
+.timeline-year {
+    flex: 0 0 48%;
+}
+.timeline-list {
+    font-size: 1.7rem;
+}
+.timeline-item {
+    padding: 0 10rem 0 3rem;
+
+    &:not(:last-child) {
+        padding: 2rem 10rem 3rem 3rem;
+    }
+}
+
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0 4rem;
+}
+.client {
+    padding: 2rem;
+    margin: 0 2rem;
+
+    &-icon {
+        width: 8rem;
+        height: 8rem;
+        fill: #666;
+    }
+}
+
+.skills-container{
+    min-height: 30rem;
+    background-image: linear-gradient(to right,rgba(21,66,118,.8),rgba(21,66,118,.8)), url(../img/606503-min.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    border-top: 1.5px solid #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+.skills-list{
+    margin:0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill{
+    margin: 1rem auto;
+    border-radius: 200px;
+    width: 350px;
+    padding: 3rem 6rem;
+    font-family: Google, sans;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #aaaaaa75;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    &-box{
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &--html{
+            background-image: url('../img/html.png');
+        }
+        &--css{
+            background-image: url('../img/css.svg');
+        }
+        &--js{
+            background-image: url('../img/js.png');
+        }
+        &--mysql{
+            width: 6rem;
+            background-image: url('../img/mysql.png');
+        }
+        &--php{
+            width: 6rem;
+            height: 3rem;
+            background-image: url('../img/PHP.svg');
+        }
+        &--python{
+            background-image: url('../img/python.png');
+        }
+    }
+}
+.exp{
+    flex: 0 0 30rem;
+    padding: 3.1rem 5rem 3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 1px solid rgba(#000,.1);
+    box-shadow: 0 1rem 2rem rgba(#000,.1);
+    margin: 1.5rem;
+    @include respond(phone){
+        flex: 0 0 100%;
+    }
+
+    &-container{
+        min-height: 60vh;
+        padding: 5rem 4rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include respond(tab){
+            padding: 5rem 2rem;
+        }
+        @include respond(phone){
+            padding: 5rem 3rem;
+        }
+    }
+    &-title{
+        border-bottom: 2px solid rgba(#000,.2);
+        margin-bottom: 1.5rem;
+        color: var(--color-primary);
+        letter-spacing: 2px;
+    }
+    &-text{
+        text-align: justify;
+        text-justify: inter-word;
+        color: #333;
+    }
+}
+code {
+    color: #555 !important;
+}
+// Hyperlink Offset
+// :target:before {
+//     content:"";
+//     display:block;
+//     height:10rem; //Header Height
+// }
+

@@ -1,0 +1,32 @@
+.btn{
+    display: inline-block;
+    border: none;
+    outline: none; text-decoration: none;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-family: Google;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background .4s;
+}
+.submit-btn{
+    width: 100%;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.btn:focus,.btn:hover{
+    background-color: #154276dd;
+}
+.social-btn{
+    display: inline-block;
+    color: var(--color-primary);
+}
+.social-btn-alt{
+    color: #fff;
+    display: inline-block;
+    margin: 0 3rem;
+}

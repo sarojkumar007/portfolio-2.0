@@ -1,0 +1,37 @@
+.icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & span {
+        font-family: Google;
+        position: absolute;
+        top: 60%;
+        margin-top: 10px;
+        padding: .6rem 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        color: var(--color-primary);
+        border-radius: 50px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+            0 5px 15px rgba(0, 0, 0, 0.07);
+        pointer-events: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover span{
+        top: 100%;
+        opacity: 0.9;
+    }
+}

@@ -1,0 +1,9 @@
+:root {
+    --color-primary: #154276;
+    --color-primary-light: #2980E5;
+    --color-primary-dark: #0B2440;
+}
+
+$linear-gradient: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+
+$radial-gradient: radial-gradient( var(--color-primary-light), var(--color-primary), var(--color-primary-dark));
